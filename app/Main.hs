@@ -1,8 +1,8 @@
 module Main where
 
-import Lib (gameRunner)
+import Game (gameRunner)
 
 main :: IO ()
 main = do
-  result <- gameRunner
+  (_, result) <- gameRunner
   print result
